@@ -1,15 +1,14 @@
-import React from 'react'
-import { StyleSheet } from 'react-native'
-import { GetStarted } from './pages'
-import Splash from './pages/Splash'
+import React from 'react';
+import { GetStarted, Splash } from './pages';
+import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
   return (
-   //<Splash/>
-    <GetStarted/>
+    <NavigationContainer>
+      {/* <GetStarted/> */}
+      <Splash/>
+    </NavigationContainer>
   )
 }
 
-export default App
-
-const styles = StyleSheet.create({})
+export default App;
